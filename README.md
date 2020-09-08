@@ -1,1 +1,1 @@
-# need-for-js
+# Интенсив по JavaScript от Glo Academy :)
