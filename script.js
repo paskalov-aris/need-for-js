@@ -31,15 +31,25 @@ function startGame() {
     start.classList.add('hide');
     setting.start = true;
     gameArea.appendChild(car);
-    console.log(gameArea);
+    setting.x = car.offsetLeft;
     requestAnimationFrame(playGame);
 }
 
-// Рекурсивная функция игры
+// Функция с процессом игры
 function playGame() {
+    debugger;
     console.log('play game');
 
-    if(setting.start === true) {
+    if(setting.start) {
+        if(keys.ArrowLeft) {
+            setting.x--;
+        }
+        if(keys.ArrowRight) {
+            setting.x++;
+        }
+
+        car.style.left = setting.x + 'px';
+
         requestAnimationFrame(playGame);
     }
 }
