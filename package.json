@@ -1,0 +1,17 @@
+{
+  "name": "nfjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "pauth": "^0.3.0",
+    "url": "^0.11.0",
+    "electron-packager": "^15.1.0"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC"
+}
